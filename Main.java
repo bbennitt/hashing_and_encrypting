@@ -264,7 +264,7 @@ public class Main {
 	        
 		    if (i == startE.length-1) {
 		        System.out.printf("AES/GCM of %dMB 0x00%n", MB);
-		        System.out.printf("Decrypted:  %s[MD5]%n",
+		        System.out.printf("Plaintext:  %s[MD5]%n",
 		    	        hexString(MessageDigest.getInstance("MD5").digest(plaintext))); //MD-5 hash of input to print shorter string
 		        System.out.printf("MAC:        %s%n", hexString(mac));
 		    }
@@ -408,7 +408,7 @@ public class Main {
 	        
 		    if (i == startE.length-1) {
 		        System.out.printf("AES/CBC of %dMB 0x00%n", MB);
-		        System.out.printf("Decrypted:  %s[MD5]%n",
+		        System.out.printf("Plaintext:  %s[MD5]%n",
 		    	        hexString(MessageDigest.getInstance("MD5").digest(plaintext))); //MD-5 hash of input to print shorter string
 		        System.out.printf("MAC:        %s%n", hexString(hash));
 		    }
